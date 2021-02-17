@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+</head>
+<body>
+<form action="#" th:action="@{/}" method="post" th:object="${personForm}">
+    <table>
+        <tr>
+            <td>Name-of-Person</td>
+            <td><input type="text" th:field="*{name}"/></td>
+        </tr>
+        <tr>
+            <td>Age-of-Person</td>
+            <td><input type="text" th:field="*{age}"/></td>
+        </tr>
+        <tr>
+            <td><button type="submit">Submit</button></td>
+
+        </tr>
+    </table>
+</form>
+</body>
+</html>
